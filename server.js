@@ -1,17 +1,21 @@
 const express        = require('express');
 
 // const MongoClient    = require('mongodb').MongoClient;
-const mysql      = require('mysql');
+const mysql = require('mysql');
 
-const bodyParser     = require('body-parser');
+const bodyParser = require('body-parser');
 
-const db             = require('./config/db');
+const db = require('./config/db');
 
-const app            = express();
+const app = express();
 
 const port = 8000;
 
+const cors = require('cors');
+
 app.use(bodyParser.urlencoded({ extended: true }));
+
+app.use(cors())
 
 const connection = mysql.createConnection(db);
 
