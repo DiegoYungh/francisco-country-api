@@ -1,0 +1,17 @@
+{
+  "name": "francisco-country-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongodb": "^2.2.33",
+    "mysql": "mysqljs/mysql",
+    "nodemon": "^1.12.1",
+    "xss": "^0.3.4"
+  }
+}
